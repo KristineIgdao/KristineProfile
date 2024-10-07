@@ -11,10 +11,10 @@ const App = () => {
 
   return (
     <View style={styles.appContainer}>
-      {/* Profile Component */}
+      {}
       <Profile isDarkMode={isDarkMode} />
 
-      {/* Dark Mode Toggle */}
+      {}
       <View style={styles.darkModeContainer}>
         <Text style={styles.darkModeText}>Dark Mode</Text>
         <Switch
