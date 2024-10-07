@@ -11,7 +11,7 @@ const NameTitle = ({ isDarkMode }) => {
 
 const styles = StyleSheet.create({
   nameTitle: {
-    fontSize: 24,
+    fontSize: 30,
     fontWeight: 'bold',
     textAlign: 'center',
     marginVertical: 5,

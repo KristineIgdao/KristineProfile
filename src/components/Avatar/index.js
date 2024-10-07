@@ -5,7 +5,7 @@ const Avatar = () => {
   return (
     <View style={styles.avatarContainer}>
       <Image
-        source={require('../../assets/Logo.jpg')} // Adjust path accordingly
+        source={require('../../assets/kristine.jpg')} 
         style={styles.avatar}
       />
     </View>
