@@ -14,19 +14,23 @@ const Avatar = () => {
 
 const styles = StyleSheet.create({
   avatarContainer: {
-    width: 150,
-    height: 150,
-    borderRadius: 75,
-    backgroundColor: '#E0E0E0',
+    width: 200,
+    height: '30%',
+    backgroundColor: '#f4f3f4',
+    borderWidth:12,
+    borderColor: 'fff', 
+    borderRadius: 190,
     justifyContent: 'center',
     alignItems: 'center',
     overflow: 'hidden',
-    marginBottom: 20,
+    marginRight: 180,
+    marginTop: -160,
+    marginLeft: 180,
   },
   avatar: {
-    width: '100%',
-    height: '100%',
-    borderRadius: 75,
+    width: 200,
+    height: 200,
+    borderRadius: 375,
   },
 });
 

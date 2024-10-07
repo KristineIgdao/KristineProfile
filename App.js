@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
   darkModeContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 20,
   },
   darkModeText: {
     marginRight: 10,

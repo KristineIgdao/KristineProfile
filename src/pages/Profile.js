@@ -14,9 +14,9 @@ const Profile = ({ isDarkMode }) => {
       <NameTitle isDarkMode={isDarkMode} />
       
       {/* Additional Info (example: Socials) */}
-      <Typography text="FB: Kristine" isDarkMode={isDarkMode} />
-      <Typography text="Insta: @kristine" isDarkMode={isDarkMode} />
-      <Typography text="Contact #: +123456789" isDarkMode={isDarkMode} />
+      <Typography text="JOINED : 1 year ago" isDarkMode={isDarkMode} />
+      <Typography text="FB: Kristine G. Igdao" isDarkMode={isDarkMode} />
+      <Typography text="Insta: @kristine_Igdao" isDarkMode={isDarkMode} />
     </View>
   );
 };

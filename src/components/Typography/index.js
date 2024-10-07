@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     textAlign: 'center',
     marginVertical: 2,
+    marginTop: 35,
   },
   lightText: {
     color: '#000',
