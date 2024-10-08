@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
 
-const Typography = ({ text, isDarkMode }) => {
+const Typography = ({ text, isDarkMode, style }) => {
   return (
-    <Text style={[styles.typography, isDarkMode ? styles.darkText : styles.lightText]}>
+    <Text style={[styles.typography, isDarkMode ? styles.darkText : styles.lightText, style]}>
       {text}
     </Text>
   );
@@ -12,9 +12,8 @@ const Typography = ({ text, isDarkMode }) => {
 const styles = StyleSheet.create({
   typography: {
     fontSize: 16,
-    textAlign: 'center',
+    textAlign: 'center', 
     marginVertical: 2,
-    marginTop: 35,
   },
   lightText: {
     color: '#000',

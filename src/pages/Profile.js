@@ -1,19 +1,18 @@
 import React from 'react';
 import { StyleSheet, View, TouchableOpacity, Linking } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome'; 
+import Icon from 'react-native-vector-icons/FontAwesome';
 import Avatar from '../components/Avatar';
 import NameTitle from '../components/NameTitle';
 import Typography from '../components/Typography';
+import Bio from '../components/bio'; 
 
 const Profile = ({ isDarkMode }) => {
 
-  
   const openFacebook = () => {
     const facebookUrl = 'https://www.facebook.com/kristeneigdao143';
     Linking.openURL(facebookUrl).catch(err => console.error("Couldn't open the URL", err));
   };
 
-  
   const openInstagram = () => {
     const instagramUrl = 'https://www.instagram.com/_krestinne/';
     Linking.openURL(instagramUrl).catch(err => console.error("Couldn't open the URL", err));
@@ -21,13 +20,14 @@ const Profile = ({ isDarkMode }) => {
 
   return (
     <View style={[styles.container, isDarkMode ? styles.darkBackground : styles.lightBackground]}>
-      {}
-      <Avatar />
       
-      {}
+      <Avatar />
+    
       <NameTitle isDarkMode={isDarkMode} />
       
-      {}
+      <Bio isDarkMode={isDarkMode} />
+
+      
       <View style={styles.row}>
         <Icon name="calendar" size={20} color={isDarkMode ? 'white' : 'black'} />
         <Typography text=" JOINED: 1 year ago" isDarkMode={isDarkMode} style={styles.text} />
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#333',
   },
   iconContainer: {
-    marginTop: 20,
+    marginTop: 10,
   },
   row: {
     flexDirection: 'row',
